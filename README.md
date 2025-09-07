@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+# TarjetaAixa
+Tarjeta Aixa para el trabajo practico N1 Front End
+=======
+>>>>>>> 7a0458d (Subida del proyecto completo)
 # Tarjeta de Presentación - Aixa Hadzi
 
 ## 💡 Descripción del Proyecto
@@ -70,3 +77,7 @@ Trabajo Práctico 1 - Front End
 
 
 
+<<<<<<< HEAD
+=======
+>>>>>>> 39eefe9 (Primer commit)
+>>>>>>> 7a0458d (Subida del proyecto completo)
