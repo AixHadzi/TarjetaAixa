@@ -1,0 +1,216 @@
+/* === Fuentes ===
+Waltograph se carga desde archivo local en waltograph.css
+Otras fuentes se cargan desde Google Fonts en el HTML
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* === FONDOS === */
+body.disney-activa {
+  background-color: #fceabb;
+}
+
+body.merlina-activa {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+}
+
+/* === PARTICULAS === */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* === TARJETA === */
+.tarjeta {
+  width: 300px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+/* Para modo Merlina (tarjeta más oscura) */
+body.merlina-activa .tarjeta {
+  background-color: #2b2b2b;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* === CONTENIDO === */
+.contenido {
+  transition: all 0.4s ease;
+}
+
+.oculto {
+  display: none;
+}
+
+/* === AVATAR === */
+.avatar {
+  width: 80px;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  border: 3px solid;
+  box-shadow: 0 0 8px;
+}
+
+.avatar.disney {
+  border-color: #ff69b4;
+  box-shadow: 0 0 8px #ffb6c1;
+}
+
+.avatar.merlina {
+  border-color: #8b0000;
+  box-shadow: 0 0 8px #8b0000;
+  filter: grayscale(40%) contrast(120%);
+}
+
+/* === FUENTES Y ESTILOS === */
+
+@font-face {
+  font-family: 'Waltograph';
+  src: url('../fonts/WaltographUI.ttf') format('truetype');
+}
+
+.disney-font {
+  font-family: 'Waltograph', cursive;
+  font-size: 20px;
+  color: #ff69b4;
+  text-shadow: 0 0 4px #ffc0cb;
+  margin-bottom: 8px;
+}
+
+.merlina-font {
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 20px;
+  color: #c41e3a;
+  text-shadow: 0 0 3px #000000;
+  margin-bottom: 8px;
+}
+
+.magico {
+  font-family: 'Raleway', sans-serif;
+  color: #ff69b4;
+  font-size: 14px;
+  text-shadow: 0 0 2px #ffb6c1;
+}
+
+.sombrio {
+  font-family: 'Playfair Display', serif;
+  color: #d0d0d0;
+  font-size: 14px;
+}
+
+.info-disney,
+.info-merlina {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.info-disney {
+  color: #ff69b4;
+  text-shadow: 0 0 2px #ffc0cb;
+}
+
+.info-merlina {
+  font-family: 'Playfair Display', serif;
+  color: #f0f0f0;
+}
+
+/* === BOTÓN === */
+button {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 14px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e055a1;
+}
+
+/* Breakpoint para móviles pequeños (menos de 400px) */
+@media (max-width: 400px) {
+  .tarjeta {
+    width: 90%;
+    padding: 12px;
+  }
+
+  .avatar {
+    width: 60px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+/* Breakpoint para pantallas medianas/tablets (hasta 900px) */
+@media (max-width: 900px) {
+  .tarjeta {
+    width: 80%;
+  }
+
+  .avatar {
+    width: 70px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+/* Breakpoint para escritorio grande (más de 1200px) */
+@media (min-width: 1200px) {
+  .tarjeta {
+    width: 400px;
+  }
+
+  .avatar {
+    width: 100px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+

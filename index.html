@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tarjeta Aixa</title>
+  <!-- CSS en carpeta css -->
+  <link rel="stylesheet" href="css/estilo-tarjeta.css">
+  <!-- Fuente externa -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:700&family=Playfair+Display&family=Raleway&display=swap" rel="stylesheet">
+
+</head>
+<body class="disney-activa">
+
+  <div id="particles-js"></div>
+
+  <div class="tarjeta" id="tarjeta">
+
+    <!-- Estilo Disney -->
+    <div class="contenido disney">
+      <img src="img/princesa.png" alt="Aixa estilo Disney" class="avatar disney">
+      <h2 class="titulo disney-font">✨ Aixa Hadzi ✨</h2>
+      <div class="info-disney">
+        <p>📍 CABA</p>
+        <p>🎂 No se le pregunta la edad a una dama</p>
+        <p>Princesa del código y soñadora serial</p>
+      </div>
+
+      <h3 class="disney-font">🔑 Habilidades</h3>
+      <p class="magico">✨ Proactiva, 💖 Multitasking, 🔥 Resolutiva y 🌈 Entusiasta.</p>
+
+      <h3 class="disney-font">📽 Películas favoritas</h3>
+      <p class="magico">❄️ Frozen, 👗 La novicia rebelde y 🕯️ Coco.</p>
+
+      <h3 class="disney-font">🎵 Música favorita</h3>
+      <p class="magico">🎤 Taylor Swift, 💜 Remember Me y 💫 Dua Lipa.</p>
+    </div>
+
+    <!-- Estilo Merlina -->
+    <div class="contenido merlina oculto">
+      <img src="img/merlina.jpg" alt="Aixa estilo Merlina" class="avatar merlina">
+      <h2 class="titulo merlina-font">🖤 Aixa Hadzi 🖤</h2>
+      <div class="info-merlina">
+        <p>📍 CABA</p>
+        <p>🎂 Edad confidencial... como todo lo oscuro</p>
+        <p>Fan del terror, el metal y los bugs existenciales</p>
+      </div>
+
+      <h3 class="merlina-font">🔪 Habilidades</h3>
+      <p class="sombrio">🕷️ Proactiva, 🩸 Multitasking, 🧠 Resolutiva y ⚰️ Estudiosa.</p>
+
+      <h3 class="merlina-font">📽 Películas favoritas</h3>
+      <p class="sombrio">🩸 IT, 🕷️ El Conjuro y ⚰️ La Monja.</p>
+
+      <h3 class="merlina-font">🎵 Música favorita</h3>
+      <p class="sombrio">🎸 ACDC, 🔥 Judas Priest y 🕯️ Metallica.</p>
+    </div>
+
+  </div>
+
+  <!-- Botón para alternar estilos -->
+  <button onclick="alternarEstilo()">🌗 Cambiar estilo</button>
+
+  <!-- Partículas -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <!-- JS en carpeta js -->
+  <script src="js/interaccion-tarjeta.js"></script>
+</body>
+</html>
